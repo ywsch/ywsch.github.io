@@ -1,1 +1,39 @@
-hello world ^_^
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>z</title>
+  <style>
+    html{
+      height: 100%;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-size: 50px;
+    }
+    h1{
+      text-align: center;
+      color: #408080;
+    }
+    h1:hover{
+      color: #229abe;
+    }
+  </style>
+</head>
+<body>
+  <h1>hello world ^_^</h1>
+  <script>
+    let h1=document.querySelector('h1')
+    h1.addEventListener('mouseover',function(){
+      this.innerHTML='嘿嘿'
+    })
+    h1.addEventListener('mouseout',function(){
+      this.innerHTML='hello world ^_^'
+    })
+  </script>
+</body>
+</html>
